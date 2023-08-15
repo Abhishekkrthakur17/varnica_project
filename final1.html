@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/logo/favicon/site.webmanifest">
+    <title>Document</title>
+    <!-- Linking Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- Linking Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <header>
+    <div class="banner"></div>
+    <nav>
+        <!-- >>>Change Home with the logo -->
+        <a class="menu-btn" href="https://www.tofler.in/varnica-precision-private-limited/company/U31909JH2020PTC013964">about us on tofler</a>
+        <a class="menu-btn" href="https://www.zaubacorp.com/company/VARNICA-PRECISION-PRIVATE-LIMITED/U31909JH2020PTC013964">zauba</a>
+        <a class="menu-btn" href="https://vakilsearch.com/company/varnica-precision-private-limited/U31909JH2020PTC013964">valik</a>
+        <a class="menu-btn" href="https://www.dnb.com/business-directory/company-profiles.varnica_precision_private_limited.2352327a49296acf4765b777194dfc4e.html">dnb</a>
+        <a class="menu-btn flex-align-right" href="https://connect2india.com/VARNICA-PRECISION-PRIVATE-LIMITED/6217196">connect2india</a>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <h2><span>milling operation</span></h2>
+        </section>
+        <section2>
+            <h2>
+                <span>
+                    input
+                </span>
+                <span2>
+                    output
+                </span2>
+            </h2>    
+        </section2>
+        <nav1>
+            
+        <div id="calculator">
+            
+            <label for="shearStrength">Shear Strength  </label>
+            <input type="number" id="shearStrength" step="0.01" required placeholder="in newton"/>
+            <div id="output" style="display:none; margin-top: 30px;">
+                <h2>Result:</h2><br><br>
+                    <p><strong>Radial Force:</strong> <span id="radial_force"></span> N</p><br><br>
+                    <p><strong>Thrust Force:</strong> <span id="thrust_force"></span> N</p><br><br>
+                    <p><strong>resultant force</strong> <span id="resultant_force"></span> N</p>
+                </div><br><br>
+            <label for="friction_angle">friction angle </label>
+            <input type="number" id="friction_angle" step="0.1" required placeholder="in radian"/><br><br>
+            <label for="material">Material: </label>
+            <select id="material">
+                <option value="steel">Steel</option>
+                <option value="aluminum">Aluminum</option>
+                <option value="copper">Copper</option>
+                <!-- Add more material options as needed -->   
+            </select><br>
+            
+            <button onclick="calculateForces()" text-align="center">Calculate Forces</button><br>
+            <label for="rake_angle">rake angle </label> 
+            <input type="number" id="rake_angle" step="0.1" required placeholder="in radian"/><br><br>
+            <label for="shear_angle">shear angle </label>
+            <input type="number" id="shear_angle" step="0.01" required placeholder="in radian"/><br><br>
+            <label for="axial_thrust">axial thrust</label>
+            <input type="number" id="axial_thrust" step="0.01" required placeholder="in newton"/><br><br>
+            <label for="side_angle">side cutting angle</label>
+            <input type="number" id="side_angle" step="0.01" required placeholder="in radian"/>
+               
+            
+        </div>
+        </nav1>
+        <section>
+            <h2><span>about milling</span></h2>
+        </section> 
+        <div  id="milling" >
+        <h3 id="pad">Milling is the process of machining using rotating cutters to remove material by advancing a cutter into a workpiece. Milling covers a wide<br><br> variety of different operations and machines, from small individual parts to large, heavy-duty group milling operations. It is one of the most<br><br> widely used processes of machining custom parts with precise tolerances.
+
+            Milling can be done in different directions on one or more axes,<br><br> cutting head speed and pressure. This can be done with a variety of machine tools. The milling process requires a milling machine, workpiece,<br><br> jig, and milling cutter. The workpiece is a piece of pre-shaped material that is attached to the fixture, which in turn is mounted on a platform <br><br>within the milling machine.
+            
+            A milling cutter is a cutting tool with sharp teeth that are also mounted in the milling machine and rotates at high<br><br> speeds. By feeding the workpiece into the rotating milling cutter, the material is cut from this workpiece in the form of small chips in order to<br><br> produce the desired shape.   
+        </h3> 
+        </div>
+        <section>
+            <h2><span>other operations</span></h2>
+        </section>
+        <button1>
+            <a class="next" href="final2.html">click to move turning</a>
+            <a class="next1" href="final3.html">click to move orthogonal</a>
+        </button1>
+
+        <section class="our_founder">
+            <h2><span>Our Founder</span></h2>
+
+            <img class="profile_img" src="vivek3.jpg" alt="This is Aman Dhattarwal">
+            <h3 class="profile_name">vivek bajpai</h3>
+            <div class="sm-handle">
+                <a class="yt_handle" href="http://www.youtube.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-youtube fa-lg"></i>YouTube</a>
+                <a class="linkdn_handle" href="https://www.linkedin.com/in/vivek-bajpai-165a11b4" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i>LinkedIn</a>
+                <a class="insta_handle" href="http://www.instagram.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i>Instagram</a>
+            </div>
+
+            <div class="about_us">
+                <h4 class="about_title">Assistant Professor at Indian Institute of Technology (ISM) Dhanbad formally known as Indian 
+                    School of Mines Dhanbad, Jharkhand, India </h4>
+                <h5 class="about_content">I help students to find their right career path. I have completed my
+                    graduation in mechanical engineering from goverment collage of engineering, rewa.<br> 
+                    completed master of engineering in production engineering from G. S. Institute of tech & sc.<br>
+                    Doctor of Philosophy in Mechanical Engineering January 2013
+                    from Indian Institute of Technology Bombay, Powai, Mumbai
+
+                    </h5>
+            </div>
+        </section>
+    
+
+        <script>
+            function calculateForces() {
+                const shearStrength = parseFloat(document.getElementById('shearStrength').value);
+                const friction_angle = parseFloat(document.getElementById('friction_angle').value);
+                const material = document.getElementById('material').value;
+                const rake_angle = parseFloat(document.getElementById('rake_angle').value);
+                const shear_angle = parseFloat(document.getElementById('shear_angle').value);
+                const axial_thrust = parseFloat(document.getElementById('axial_thrust').value);
+                const side_angle = parseFloat(document.getElementById('side_angle').value);
+    
+                if (isNaN(shearStrength) || isNaN(friction_angle) || isNaN(rake_angle) || isNaN(shear_angle)||isNaN(axial_thrust)||isNaN(side_angle)) {
+                    alert('Please enter valid numbers for all inputs.');
+                    return;
+                }
+    
+                const cutt=shearStrength* Math.cos(friction_angle-rake_angle);
+                const cutt2=cutt/Math.cos(shear_angle+friction_angle-rake_angle)
+    
+    
+                
+                const thrust1=cutt2*Math.cos(shear_angle)-shearStrength;
+                const thrust2=thrust1/Math.sin(shear_angle);
+    
+                
+                const radial=axial_thrust*Math.sin(side_angle);
+
+                const resultant=cutt2*(1/Math.cosh(friction_angle-rake_angle));
+    
+                // Display results
+                document.getElementById('radial_force').textContent = radial.toFixed(2);
+                document.getElementById('thrust_force').textContent = thrust2.toFixed(2);
+                document.getElementById('resultant_force').textContent = resultant.toFixed(2);
+    
+                // Show the output section
+                document.getElementById('output').style.display = 'block';
+            }
+            //part 2-------------------------------------------------------------------------------------------------------------
+        </script>
+        
+    </main>         
+    </body>
+</body>
+</html>

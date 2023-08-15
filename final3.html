@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/logo/favicon/site.webmanifest">
+    <title>Document</title>
+    <!-- Linking Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- Linking Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling_3.css">
+</head>
+<body>
+    <header>
+    <div class="banner"></div>
+    <nav>
+        <!-- >>>Change Home with the logo -->
+        <a class="menu-btn" href="https://www.tofler.in/varnica-precision-private-limited/company/U31909JH2020PTC013964">about us on tofler</a>
+        <a class="menu-btn" href="https://www.zaubacorp.com/company/VARNICA-PRECISION-PRIVATE-LIMITED/U31909JH2020PTC013964">zauba</a>
+        <a class="menu-btn" href="https://vakilsearch.com/company/varnica-precision-private-limited/U31909JH2020PTC013964">valik</a>
+        <a class="menu-btn" href="https://www.dnb.com/business-directory/company-profiles.varnica_precision_private_limited.2352327a49296acf4765b777194dfc4e.html">dnb</a>
+        <a class="menu-btn flex-align-right" href="https://connect2india.com/VARNICA-PRECISION-PRIVATE-LIMITED/6217196">connect2india</a>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <h2><span>orthogonal operation</span></h2>
+        </section>
+        <section2>
+            <h2>
+                <span>
+                    input
+                </span>
+                <span2>
+                    output
+                </span2>
+            </h2>    
+        </section2>
+        <nav1>
+            
+        <div id="calculator">
+            
+            <label for="shearStrength">Shear force : </label>
+            <input type="number" id="shearStrength" step="0.01" required placeholder="in newton"/>
+            <div id="output" style="display:none; margin-top: 30px;">
+                <h2>Result:</h2><br><br>
+                    <!--<p><strong></strong> <span id="radialForce"></span>N </p><br><br>-->
+                    <p><strong>cutting force</strong> <span id="cutting_force"></span> N</p><br><br>
+                    <p><strong>thrust force</strong> <span id="thrust_force"></span> N</p>
+                </div><br><br>
+            <label for="friction_angle">friction angle </label>
+            <input type="number" id="friction_angle" step="0.1" required placeholder="in radian"/><br><br>
+            <label for="material">Material: </label>
+            <select id="material">
+                <option value="steel">Steel</option>
+                <option value="aluminum">Aluminum</option>
+                <option value="copper">Copper</option>
+                <!-- Add more material options as needed -->   
+            </select><br>
+            
+            <button onclick="calculateForces()" text-align="center">Calculate Forces</button><br>
+            <label for="rake_angle">Rake angle </label> 
+            <input type="number" id="rake_angle" step="0.1" required placeholder="in radian"/><br><br>
+            <label for="shear_angle">shear angle </label>
+            <input type="number" id="shear_angle" step="0.01" required placeholder="in radian"/><br><br>
+               
+            
+        </div>
+        </nav1>
+        <section>
+            <h2><span>about orthogonal operation</span></h2>
+        </section> 
+        <div  id="milling" >
+        <h3 id="pad">Orthogonal cutting uses a wedge-shaped tool in which the cutting edge is perpendicular to the direction of cutting speed. 
+            … As the tool is forced<br><br> into the material, the chip is formed by shear deformation along a plane called the shear plane, which is 
+            oriented at an angle f with the surface<br><br> of the work.The term orthogonal cutting has been coined1 to cover the case where the cutting
+            tool generates a plane surface parallel to an<br><br> original plane surface of the material being cut and is set with its cutting edge 
+            perpendicular to the direction of relative motion of tool apd<br><br> workpiece.
+            
+        </h3>
+        </div>
+        <section>
+            <h2><span>other operations</span></h2>
+        </section>
+        <button1>
+            <a class="next" href="final1.html">click here for milling</a>
+            <a class="next1" href="final2.html">click here for turning</a>
+        </button1>
+
+        <section class="our_founder">
+            <h2><span>Our Founder</span></h2>
+
+            <img class="profile_img" src="vivek3.jpg" alt="This is Aman Dhattarwal">
+            <h3 class="profile_name">vivek bajpai</h3>
+            <div class="sm-handle">
+                <a class="yt_handle" href="http://www.youtube.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-youtube fa-lg"></i>YouTube</a>
+                <a class="linkdn_handle" href="https://www.linkedin.com/in/vivek-bajpai-165a11b4" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i>LinkedIn</a>
+                <a class="insta_handle" href="http://www.instagram.com" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i>Instagram</a>
+            </div>
+
+            <div class="about_us">
+                <h4 class="about_title">Assistant Professor at Indian Institute of Technology (ISM) Dhanbad formally known as Indian 
+                    School of Mines Dhanbad, Jharkhand, India </h4>
+                <h5 class="about_content">I help students to find their right career path. I have completed my
+                    graduation in mechanical engineering from goverment collage of engineering, rewa.<br> 
+                    completed master of engineering in production engineering from G. S. Instituteof tech & sc.<br>
+                    Doctor of Philosophy in Mechanical Engineering January 2013
+                    from Indian Institute of Technology Bombay, Powai, Mumbai
+            </div>
+        </section>
+    
+
+        <script>
+            function calculateForces() {
+                const shearStrength = parseFloat(document.getElementById('shearStrength').value);
+                const friction_angle = parseFloat(document.getElementById('friction_angle').value);
+                const material = document.getElementById('material').value;
+                const rake_angle = parseFloat(document.getElementById('rake_angle').value);
+                const shear_angle = parseFloat(document.getElementById('shear_angle').value);
+    
+                if (isNaN(shearStrength) || isNaN(rake_angle) || isNaN(friction_angle) || isNaN(shear_angle)) {
+                    alert('Please enter valid numbers for all inputs.');
+                    return;
+                }
+    
+                const cutt=shearStrength* Math.cos(friction_angle-rake_angle);
+                const cutt2=cutt/Math.cos(shear_angle+friction_angle-rake_angle)
+    
+                const thrust1=(cutt2*Math.cos(shear_angle))-shearStrength;
+                const thrust2=thrust1/Math.sin(shear_angle);
+    
+    
+                // Display results
+                document.getElementById('cutting_force').textContent = cutt2.toFixed(2);
+                document.getElementById('thrust_force').textContent = thrust2.toFixed(2);
+    
+                // Show the output section
+                document.getElementById('output').style.display = 'block';
+            }
+            //part 2-------------------------------------------------------------------------------------------------------------
+        </script>
+        
+    </main>         
+    </body>
+</body>
+</html>
